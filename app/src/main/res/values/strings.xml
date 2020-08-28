@@ -7,4 +7,7 @@
     <string name="firebase_login">Firebase Login</string>
     <string name="ingresar">Ingresar</string>
     <string name="registrarse">Registrarse</string>
+    <string name="confirmar_registro">Confirmar Registro</string>
+    <string name="completa_tus_datos">Completa tus datos</string>
+    <string name="nombre">Nombre</string>
 </resources>
