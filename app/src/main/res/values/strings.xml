@@ -10,4 +10,7 @@
     <string name="confirmar_registro">Confirmar Registro</string>
     <string name="completa_tus_datos">Completa tus datos</string>
     <string name="nombre">Nombre</string>
+    <string name="ingrese_email">Ingrese Email</string>
+    <string name="ingrese_rut_sin_puntos">Ingrese Rut sin puntos</string>
+    <string name="ingrese_nombre">Ingrese Nombre</string>
 </resources>
