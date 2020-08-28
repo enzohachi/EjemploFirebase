@@ -1,4 +1,4 @@
-package cl.malditosnakamas.briska.utils.validator
+package cl.grupo2.ejemplofirebase.utils.validator
 
 object NumberValidator {
     fun validate(number: String): Boolean {

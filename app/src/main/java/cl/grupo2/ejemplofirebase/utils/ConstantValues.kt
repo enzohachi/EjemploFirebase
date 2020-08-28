@@ -1,4 +1,4 @@
-package cl.malditosnakamas.briska.utils
+package cl.grupo2.ejemplofirebase.utils
 
 object ConstantValues {
     const val EMPTY_STRING = ""

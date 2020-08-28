@@ -1,8 +1,9 @@
-package cl.malditosnakamas.briska.utils.validator
+package cl.grupo2.ejemplofirebase.utils.validator
 
-import cl.malditosnakamas.briska.utils.ConstantValues.EMPTY_STRING
-import cl.malditosnakamas.briska.utils.ConstantValues.PLUS_VALUE
-import cl.malditosnakamas.briska.utils.ConstantValues.SPACE_STRING
+import cl.grupo2.ejemplofirebase.utils.ConstantValues.EMPTY_STRING
+import cl.grupo2.ejemplofirebase.utils.ConstantValues.PLUS_VALUE
+import cl.grupo2.ejemplofirebase.utils.ConstantValues.SPACE_STRING
+
 
 object PhoneNumberValidator {
     private const val NUMBER_VALUES = "[0-9]+"

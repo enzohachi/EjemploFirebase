@@ -1,8 +1,9 @@
-package cl.malditosnakamas.briska.utils.validator
+package cl.grupo2.ejemplofirebase.utils.validator
 
-import cl.malditosnakamas.briska.utils.ConstantValues.EMPTY_STRING
-import cl.malditosnakamas.briska.utils.ConstantValues.POINT_VALUE
-import cl.malditosnakamas.briska.utils.ConstantValues.RUT_SEPARATOR
+
+import cl.grupo2.ejemplofirebase.utils.ConstantValues.EMPTY_STRING
+import cl.grupo2.ejemplofirebase.utils.ConstantValues.POINT_VALUE
+import cl.grupo2.ejemplofirebase.utils.ConstantValues.RUT_SEPARATOR
 import java.util.*
 import java.util.regex.Matcher
 import java.util.regex.Pattern

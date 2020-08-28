@@ -1,4 +1,4 @@
-package cl.malditosnakamas.briska.utils.validator
+package cl.grupo2.ejemplofirebase.utils.validator
 
 import java.util.regex.Matcher
 import java.util.regex.Pattern

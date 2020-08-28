@@ -1,10 +1,11 @@
-package cl.malditosnakamas.briska.utils.extensions
+package cl.grupo2.ejemplofirebase.utils.extensions
 
 import androidx.appcompat.widget.AppCompatEditText
-import cl.malditosnakamas.briska.utils.validator.EmailValidator
-import cl.malditosnakamas.briska.utils.validator.NameValidator
-import cl.malditosnakamas.briska.utils.validator.PassValidator
-import cl.malditosnakamas.briska.utils.validator.RutValidator
+import cl.grupo2.ejemplofirebase.utils.validator.EmailValidator
+import cl.grupo2.ejemplofirebase.utils.validator.NameValidator
+import cl.grupo2.ejemplofirebase.utils.validator.PassValidator
+import cl.grupo2.ejemplofirebase.utils.validator.RutValidator
+
 
 
 fun AppCompatEditText.isValidNameInput(message: String) : Boolean{
