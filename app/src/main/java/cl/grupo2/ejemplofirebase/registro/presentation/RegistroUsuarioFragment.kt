@@ -11,7 +11,7 @@ import cl.grupo2.ejemplofirebase.login.presentation.LoginUiState
 import cl.grupo2.ejemplofirebase.registro.data.remote.FirebaseRegistroRepository
 import cl.grupo2.ejemplofirebase.registro.domain.RegistraUsuarioUseCase
 import cl.grupo2.ejemplofirebase.registro.domain.RegistroUsuario
-import cl.grupo2.ejemplofirebase.utils.extensions.alert
+import cl.grupo2.ejemplofirebase.utils.extensions.*
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 
@@ -53,15 +53,34 @@ class RegistroUsuarioFragment : Fragment (R.layout.fragment_registro_usuario){
        binding.apply {
            btnRegistrarse.setOnClickListener{
                if (isAllValidInputs()){
-
+                    viewModel.registrarUsuario(obtenerDatosUsuario())
                }
+           }
+           btnVolver.setOnClickListener{
+               activity?.onBackPressed()
            }
        }
     }
 
+    private fun obtenerDatosUsuario(): RegistroUsuario {
+        binding.apply {
+            return RegistroUsuario(
+                etNombre.text.toString(),
+                etRut.text.toString(),
+                etEmail.text.toString(),
+                etPassword.text.toString()
+            )
+        }
+
+    }
+
     private fun isAllValidInputs(): Boolean {
         binding.apply {
-            return  RegistroUsuario()
+            return etNombre.isValidNameInput("Ingrese nombre") ||
+                    etEmail.isValidEmailInput("Ingrese correo valido")||
+                    etRut.isValidRutInput("Ingrese un Rut Valido")||
+                    etPassword.isValidPassInput("Ingrese contraseña con 6 o mas caracteres")||
+                    etPasswordConform.isValidPassConfirm(etPassword.text.toString(),"La contraseña debe coincidir con la anterior")
         }
     }
 

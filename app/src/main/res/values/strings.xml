@@ -13,4 +13,7 @@
     <string name="ingrese_email">Ingrese Email</string>
     <string name="ingrese_rut_sin_puntos">Ingrese Rut sin puntos</string>
     <string name="ingrese_nombre">Ingrese Nombre</string>
+    <string name="volver">Volver</string>
+    <string name="ingrese_password">Ingrese Password</string>
+    <string name="repite_password">Repite Password</string>
 </resources>

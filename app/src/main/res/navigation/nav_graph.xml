@@ -10,25 +10,22 @@
         android:name="cl.grupo2.ejemplofirebase.login.presentation.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
-        <action
-            android:id="@+id/action_loginFragment_to_registroFragment"
-            app:destination="@id/registroFragment" />
+
         <action
             android:id="@+id/action_loginFragment_to_blankFragment"
             app:destination="@id/blankFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/registroFragment"
-        android:name="cl.grupo2.ejemplofirebase.registro.RegistroFragment"
-        android:label="fragment_registro"
-        tools:layout="@layout/fragment_registro" >
         <action
-            android:id="@+id/action_registroFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
+            android:id="@+id/action_loginFragment_to_registroFragment"
+            app:destination="@id/registroFragment2" />
     </fragment>
     <fragment
         android:id="@+id/blankFragment"
         android:name="cl.grupo2.ejemplofirebase.otroFragment.BlankFragment"
         android:label="fragment_blank"
         tools:layout="@layout/fragment_blank" />
+    <fragment
+        android:id="@+id/registroFragment2"
+        android:name="cl.grupo2.ejemplofirebase.registro.presentation.RegistroUsuarioFragment"
+        android:label="fragment_registro_usuario"
+        tools:layout="@layout/fragment_registro_usuario" />
 </navigation>
